@@ -1,4 +1,4 @@
-# QuickText Lite: design
+# Quicktext Lite: design
 
 - Date: 2026-11-08
 - Status: design approved in brainstorming, spec under review
@@ -47,7 +47,9 @@ Out of scope (v1):
 
 ### 4.2 Shortcut that opens the panel
 
-Command `_execute_compose_action` with suggested keys `Command+Shift+S` on macOS and `Ctrl+Shift+S` on Windows and Linux. Users can change it in the Add-ons Manager (Manage Extension Shortcuts).
+Command `open-template-panel` with suggested keys `Command+Shift+S` on macOS and `Ctrl+Shift+S` on Windows and Linux. Users can change it in the Add-ons Manager (Manage Extension Shortcuts).
+
+Commands `insert-template-1` to `insert-template-9` and `insert-template-0` insert the template with that panel number (4.3) straight into the message, without opening the panel. Suggested keys: Control+Shift+digit (`MacCtrl+Shift`) on macOS, because macOS keeps Cmd+Shift+3, 4 and 5 for screenshots, and Ctrl+Shift+digit on Windows and Linux. A number without a template does nothing. A plain-text message gets the same "!" badge as an insert from the menu.
 
 Why S: in current Thunderbird source, Cmd/Ctrl+Shift with A, B, C, G, I, J, K, L, M, O, P, R, T, V, X, Y and Z is already taken in the compose or main window, while S is free in both. Option+letter (macOS) and Ctrl+Alt+letter (AltGr on Windows) were rejected because they type Polish characters; Cmd+Shift+3/4/5 because macOS uses them for screenshots.
 
@@ -146,7 +148,7 @@ Import (manager button) opens a file picker and detects the format from the cont
 
 | Format | Recognised by |
 |---|---|
-| QuickText Lite backup | `"format": "quicktext-lite"` |
+| Quicktext Lite backup | `"format": "quicktext-lite"` |
 | Quicktext 6 export (JSON) | `templates.groups` and `templates.texts` as parallel arrays |
 | Quicktext legacy file (XML) | root `<quicktext version="2">` with `filetype` `templates` or empty |
 

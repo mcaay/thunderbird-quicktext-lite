@@ -1,0 +1,299 @@
+:root {
+  color-scheme: light dark;
+  font: message-box;
+  --border: color-mix(in srgb, CanvasText 18%, transparent);
+  --hover: color-mix(in srgb, CanvasText 8%, transparent);
+  --drop: #2563eb;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: Canvas;
+  color: CanvasText;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+button {
+  font: inherit;
+  padding: 4px 10px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.toolbar h1 {
+  margin: 0 12px 0 0;
+  font-size: 1.15em;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #fde2e2;
+  color: #8a1111;
+}
+
+.banner span {
+  flex: 1;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.tree {
+  width: 280px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+  overflow: auto;
+  border-right: 1px solid var(--border);
+}
+
+.tree ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  touch-action: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: default;
+  user-select: none;
+  outline: none;
+}
+
+.row:hover {
+  background: var(--hover);
+}
+
+.row.selected {
+  background: SelectedItem;
+  color: SelectedItemText;
+}
+
+.row:focus-visible {
+  box-shadow: 0 0 0 2px var(--drop);
+}
+
+.row.grouped {
+  padding-left: 26px;
+}
+
+.row .label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.group-row .label {
+  font-weight: 600;
+}
+
+.row .count {
+  margin-left: auto;
+  font-size: 0.85em;
+  opacity: 0.6;
+}
+
+.row.dragging {
+  opacity: 0.5;
+}
+
+.drop-before {
+  box-shadow: inset 0 2px 0 0 var(--drop);
+}
+
+.drop-after {
+  box-shadow: inset 0 -2px 0 0 var(--drop);
+}
+
+.drop-into {
+  box-shadow: inset 0 0 0 2px var(--drop);
+}
+
+.tree-end {
+  flex: 1;
+  min-height: 48px;
+}
+
+.tree-end.drop-end {
+  box-shadow: inset 0 2px 0 0 var(--drop);
+}
+
+.detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  padding: 12px;
+}
+
+.placeholder {
+  opacity: 0.7;
+}
+
+.item-form,
+.template-fields {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 0;
+}
+
+.name-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.name-field input {
+  flex: 1;
+  padding: 4px 6px;
+  font: inherit;
+}
+
+input.invalid {
+  outline: 2px solid #d70022;
+}
+
+.notice {
+  margin: 0;
+  padding: 6px 8px;
+  border-radius: 4px;
+  background: #fff4ce;
+  color: #5c4400;
+}
+
+.split {
+  flex: 1;
+  display: flex;
+  gap: 12px;
+  min-height: 0;
+}
+
+.pane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.pane-title {
+  font-size: 0.85em;
+  opacity: 0.7;
+}
+
+.editor,
+.preview {
+  flex: 1;
+  min-height: 0;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #fff;
+}
+
+.editor {
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .split {
+    flex-direction: column;
+  }
+}
+
+.cm-data-chip {
+  display: inline-block;
+  padding: 0 6px;
+  border-radius: 10px;
+  background: #dbeafe;
+  color: #1e3a8a;
+  font-size: 0.92em;
+}
+
+.status {
+  min-height: 1.4em;
+  padding: 4px 12px;
+  border-top: 1px solid var(--border);
+  font-size: 0.9em;
+}
+
+.status.error {
+  color: #d70022;
+}
+
+dialog {
+  max-width: 520px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: Canvas;
+  color: CanvasText;
+}
+
+.import-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.import-form h2 {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.error {
+  margin: 0;
+  color: #d70022;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}

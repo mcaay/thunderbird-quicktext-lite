@@ -1,0 +1,10 @@
+node_modules/
+dist/
+reviews/
+quicktext-lite-backup-*.json
+quicktext-lite-raw-data.json
+.DS_Store
+# Local test notes: they name a real mailbox and real templates.
+docs/test-results-*.md
+docs/test-checklist.md
+docs/test-handoff-*.md

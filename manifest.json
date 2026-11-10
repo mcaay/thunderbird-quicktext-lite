@@ -1,0 +1,92 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
+  "version": "1.0.25",
+  "default_locale": "en",
+  "author": "Konrad Olszowski",
+  "homepage_url": "https://github.com/mcaay/thunderbird-quicktext-lite",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "quicktext-lite@mcaay.github.io",
+      "strict_min_version": "153.0"
+    }
+  },
+  "icons": {
+    "16": "icons/icon.svg",
+    "32": "icons/icon.svg",
+    "64": "icons/icon.svg"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "type": "module"
+  },
+  "compose_action": {
+    "default_title": "__MSG_composeActionTitle__",
+    "default_label": "__MSG_composeActionLabel__",
+    "default_icon": "icons/icon.svg",
+    "default_area": "maintoolbar",
+    "default_popup": "popup/popup.html"
+  },
+  "commands": {
+    "open-template-panel": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "__MSG_commandOpenPanel__"
+    },
+    "insert-template-1": {
+      "suggested_key": { "default": "Ctrl+Shift+1", "mac": "MacCtrl+Shift+1" },
+      "description": "__MSG_commandInsertTemplate1__"
+    },
+    "insert-template-2": {
+      "suggested_key": { "default": "Ctrl+Shift+2", "mac": "MacCtrl+Shift+2" },
+      "description": "__MSG_commandInsertTemplate2__"
+    },
+    "insert-template-3": {
+      "suggested_key": { "default": "Ctrl+Shift+3", "mac": "MacCtrl+Shift+3" },
+      "description": "__MSG_commandInsertTemplate3__"
+    },
+    "insert-template-4": {
+      "suggested_key": { "default": "Ctrl+Shift+4", "mac": "MacCtrl+Shift+4" },
+      "description": "__MSG_commandInsertTemplate4__"
+    },
+    "insert-template-5": {
+      "suggested_key": { "default": "Ctrl+Shift+5", "mac": "MacCtrl+Shift+5" },
+      "description": "__MSG_commandInsertTemplate5__"
+    },
+    "insert-template-6": {
+      "suggested_key": { "default": "Ctrl+Shift+6", "mac": "MacCtrl+Shift+6" },
+      "description": "__MSG_commandInsertTemplate6__"
+    },
+    "insert-template-7": {
+      "suggested_key": { "default": "Ctrl+Shift+7", "mac": "MacCtrl+Shift+7" },
+      "description": "__MSG_commandInsertTemplate7__"
+    },
+    "insert-template-8": {
+      "suggested_key": { "default": "Ctrl+Shift+8", "mac": "MacCtrl+Shift+8" },
+      "description": "__MSG_commandInsertTemplate8__"
+    },
+    "insert-template-9": {
+      "suggested_key": { "default": "Ctrl+Shift+9", "mac": "MacCtrl+Shift+9" },
+      "description": "__MSG_commandInsertTemplate9__"
+    },
+    "insert-template-0": {
+      "suggested_key": { "default": "Ctrl+Shift+0", "mac": "MacCtrl+Shift+0" },
+      "description": "__MSG_commandInsertTemplate0__"
+    }
+  },
+  "options_ui": {
+    "page": "manager/manager.html",
+    "open_in_tab": true
+  },
+  "permissions": [
+    "compose",
+    "scripting",
+    "menus",
+    "storage"
+  ]
+}

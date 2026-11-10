@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="popup.css">
+  <script type="module" src="popup.js"></script>
+</head>
+<body>
+  <div id="error" class="error" role="alert" hidden></div>
+  <input id="search" type="search" autocomplete="off" spellcheck="false" autofocus
+         data-i18n-placeholder="popupSearchPlaceholder" data-i18n-aria-label="popupSearchPlaceholder">
+  <ul id="list" role="listbox"></ul>
+  <p id="message" class="message" hidden></p>
+  <footer>
+    <button id="manage" type="button" data-i18n="popupManage"></button>
+  </footer>
+</body>
+</html>

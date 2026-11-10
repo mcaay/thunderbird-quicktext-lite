@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<quicktext version="2">
+	<filetype>templates</filetype>
+	<menu>
+		<title><![CDATA[Signature PL]]></title>
+		<texts>
+			<text shortcut="" type="1">
+				<name><![CDATA[Signature PL]]></name>
+				<body><![CDATA[<p style="font-family: 'Arial';"><b>Jan Kowalski</b><br>Manager</p>]]></body>
+			</text>
+		</texts>
+	</menu>
+	<menu>
+		<title><![CDATA[Support]]></title>
+		<texts>
+			<text shortcut="2" type="1">
+				<name><![CDATA[Hotline]]></name>
+				<body><![CDATA[<p>Call us</p>]]></body>
+				<subject><![CDATA[Help]]></subject>
+				<keyword><![CDATA[hot]]></keyword>
+			</text>
+			<text shortcut="" type="0">
+				<name><![CDATA[Plain]]></name>
+				<body><![CDATA[Line 1
+Line <2> & "3"]]></body>
+			</text>
+		</texts>
+	</menu>
+	<menu>
+		<title>No texts</title>
+	</menu>
+</quicktext>

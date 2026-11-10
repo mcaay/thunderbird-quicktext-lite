@@ -1,0 +1,24 @@
+{
+  "templates": {
+    "groups": [
+      { "name": "Signature PL", "protected": false },
+      { "name": "Support", "protected": false },
+      { "name": "  Lone  " },
+      { "name": "Empty" }
+    ],
+    "texts": [
+      [
+        { "name": "Signature PL", "text": "<p><b>Jan Kowalski</b></p><img src=\"data:image/png;base64,iVBORw0KGgo=\">", "shortcut": "1", "type": "text/html", "keyword": "sig", "subject": "", "attachments": "" }
+      ],
+      [
+        { "name": "Hotline", "text": "<p>Call us</p>", "shortcut": "", "type": "text/html", "keyword": "", "subject": "Help", "attachments": "" },
+        { "name": "Plain", "text": "Line 1\nLine <2> & \"3\"", "shortcut": "", "type": "text/plain", "keyword": "", "subject": "", "attachments": "" },
+        { "name": "Greeting", "text": "<p>Hi [[TO=firstname]],</p>", "type": "text/html" }
+      ],
+      [
+        { "name": "Lone", "text": "<p>lone</p>", "type": "text/html" }
+      ]
+    ]
+  },
+  "scripts": [{ "name": "ignored", "script": "return 1;" }]
+}

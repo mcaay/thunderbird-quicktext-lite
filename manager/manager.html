@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="color-scheme" content="light dark">
+  <title data-i18n="managerTitle"></title>
+  <link rel="icon" href="../icons/icon.svg">
+  <link rel="stylesheet" href="manager.css">
+  <script type="module" src="manager.js"></script>
+</head>
+<body>
+  <header class="toolbar">
+    <h1 data-i18n="managerTitle"></h1>
+    <!-- Disabled until the library has been read, so nothing can replace it unseen. -->
+    <button id="new-template" type="button" data-i18n="newTemplate" disabled></button>
+    <button id="new-group" type="button" data-i18n="newGroup" disabled></button>
+    <button id="delete" type="button" data-i18n="delete" disabled></button>
+    <span class="spacer"></span>
+    <button id="import" type="button" data-i18n="import" disabled></button>
+    <button id="export" type="button" data-i18n="export" disabled></button>
+  </header>
+
+  <div id="banner" class="banner" role="alert" hidden>
+    <span id="banner-text"></span>
+    <button id="download-raw" type="button" data-i18n="downloadRaw"></button>
+    <button id="start-empty" type="button" data-i18n="startEmpty"></button>
+  </div>
+
+  <main>
+    <nav id="tree" class="tree" data-i18n-aria-label="treeLabel"></nav>
+    <section class="detail">
+      <p id="notice" class="notice" role="status" hidden></p>
+      <p id="placeholder" class="placeholder"></p>
+      <div id="item-form" class="item-form" hidden>
+        <label class="name-field">
+          <span data-i18n="nameLabel"></span>
+          <input id="name" type="text" spellcheck="false" autocomplete="off">
+        </label>
+        <div id="template-fields" class="template-fields">
+          <div class="editor-toolbar">
+            <button id="insert-image" type="button" data-i18n="insertImage"></button>
+            <input id="image-file" type="file" accept="image/*" hidden>
+          </div>
+          <div class="split">
+            <div class="pane">
+              <div class="pane-title" data-i18n="editorLabel"></div>
+              <div id="editor" class="editor"></div>
+            </div>
+            <div class="pane">
+              <div class="pane-title" data-i18n="previewTitle"></div>
+              <iframe id="preview" class="preview" sandbox="" data-i18n-title="previewTitle"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="status" class="status" role="status"></footer>
+
+  <dialog id="import-dialog">
+    <form method="dialog" class="import-form">
+      <h2 data-i18n="importTitle"></h2>
+      <label class="field">
+        <span data-i18n="importFileLabel"></span>
+        <input id="import-file" type="file" accept=".json,.xml,application/json,text/xml">
+      </label>
+      <label class="checkbox">
+        <input id="import-flatten" type="checkbox" checked>
+        <span data-i18n="importFlatten"></span>
+      </label>
+      <p id="import-error" class="error" role="alert" hidden></p>
+      <div class="dialog-buttons">
+        <button id="import-cancel" type="button" data-i18n="cancel"></button>
+        <button id="import-confirm" type="submit" data-i18n="importButton"></button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>
