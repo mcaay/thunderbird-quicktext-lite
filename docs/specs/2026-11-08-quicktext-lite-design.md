@@ -49,7 +49,7 @@ Out of scope (v1):
 
 Command `open-template-panel` with suggested keys `Command+Shift+S` on macOS and `Ctrl+Shift+S` on Windows and Linux. Users can change it in the Add-ons Manager (Manage Extension Shortcuts).
 
-Commands `insert-template-1` to `insert-template-9` and `insert-template-0` insert the template with that panel number (4.3) straight into the message, without opening the panel. Suggested keys: Control+Shift+digit (`MacCtrl+Shift`) on macOS, because macOS keeps Cmd+Shift+3, 4 and 5 for screenshots, and Ctrl+Shift+digit on Windows and Linux. A number without a template does nothing. A plain-text message gets the same "!" badge as an insert from the menu.
+Commands `insert-template-1` to `insert-template-9` and `insert-template-0` insert the template with that panel number (4.3) straight into the message, without opening the panel. Suggested keys: Ctrl+Shift+digit on every system. On macOS this is the Ctrl key (`MacCtrl` in the manifest), not Cmd, because macOS keeps Cmd+Shift+3, 4 and 5 for screenshots. A number without a template does nothing. A plain-text message gets the same "!" badge as an insert from the menu.
 
 Why S: in current Thunderbird source, Cmd/Ctrl+Shift with A, B, C, G, I, J, K, L, M, O, P, R, T, V, X, Y and Z is already taken in the compose or main window, while S is free in both. Option+letter (macOS) and Ctrl+Alt+letter (AltGr on Windows) were rejected because they type Polish characters; Cmd+Shift+3/4/5 because macOS uses them for screenshots.
 
