@@ -1,7 +1,6 @@
 {
   "extensionName": { "message": "Quicktext Lite" },
   "extensionDescription": { "message": "Insert saved HTML templates into the message you are writing. Group them, pick them from a panel or the context menu, and insert the first ten with Cmd/Ctrl+1 to 0." },
-  "composeActionLabel": { "message": "Templates" },
   "composeActionTitle": { "message": "Insert a template" },
   "commandOpenPanel": { "message": "Open the templates panel" },
   "commandInsertTemplate1": { "message": "Insert template 1" },

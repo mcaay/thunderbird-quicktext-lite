@@ -4,7 +4,7 @@ A Thunderbird add-on that inserts saved HTML templates, such as signatures and s
 
 ## Features
 
-- **Panel:** press Cmd+Shift+S (Ctrl+Shift+S on Windows and Linux) or click Templates in the compose toolbar. Type to search (accents are ignored) and press Enter, or press Cmd/Ctrl+1 to 0 for one of the first ten templates.
+- **Panel:** press Cmd+Shift+S (Ctrl+Shift+S on Windows and Linux) or click Quicktext Lite in the compose toolbar. Type to search (accents are ignored) and press Enter, or press Cmd/Ctrl+1 to 0 for one of the first ten templates.
 - **Direct shortcuts:** Ctrl+Shift+1 to Ctrl+Shift+0 inserts templates 1 to 10 without opening the panel. On a Mac this is also Ctrl, not Cmd.
 - **Context menu:** right-click in the message and choose Insert template.
 - **Manager:** group templates, reorder them by drag and drop, edit their HTML with syntax highlighting and a preview, and embed images from files.

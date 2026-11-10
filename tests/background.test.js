@@ -168,3 +168,12 @@ test("the ten number shortcuts have keys and descriptions in both languages", as
     assert.ok(en[key]?.message && pl[key]?.message, key);
   }
 });
+
+test("the toolbar button is labelled with the add-on's name", async () => {
+  const { readFileSync } = await import("node:fs");
+  const read = (path) => JSON.parse(readFileSync(new URL(path, import.meta.url), "utf8"));
+  assert.equal(read("../manifest.json").compose_action.default_label, "__MSG_extensionName__");
+  for (const locale of ["en", "pl"]) {
+    assert.equal(read(`../_locales/${locale}/messages.json`).extensionName.message, "Quicktext Lite");
+  }
+});

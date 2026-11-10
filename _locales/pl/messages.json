@@ -1,7 +1,6 @@
 {
   "extensionName": { "message": "Quicktext Lite" },
   "extensionDescription": { "message": "Wstawia zapisane szablony HTML do pisanej wiadomości. Szablony można grupować, wybierać z panelu lub menu kontekstowego, a pierwszych dziesięć wstawiać skrótami Cmd/Ctrl+1 do 0." },
-  "composeActionLabel": { "message": "Szablony" },
   "composeActionTitle": { "message": "Wstaw szablon" },
   "commandOpenPanel": { "message": "Otwórz panel szablonów" },
   "commandInsertTemplate1": { "message": "Wstaw szablon 1" },

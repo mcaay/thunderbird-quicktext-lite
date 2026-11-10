@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "__MSG_extensionName__",
   "description": "__MSG_extensionDescription__",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "default_locale": "en",
   "author": "Konrad Olszowski",
   "homepage_url": "https://github.com/mcaay/thunderbird-quicktext-lite",
@@ -25,7 +25,7 @@
   },
   "compose_action": {
     "default_title": "__MSG_composeActionTitle__",
-    "default_label": "__MSG_composeActionLabel__",
+    "default_label": "__MSG_extensionName__",
     "default_icon": "icons/icon.svg",
     "default_area": "maintoolbar",
     "default_popup": "popup/popup.html"

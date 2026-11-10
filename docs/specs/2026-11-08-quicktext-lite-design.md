@@ -43,7 +43,7 @@ Out of scope (v1):
 
 ### 4.1 Button
 
-`compose_action` in the main composition toolbar (`default_area: "maintoolbar"`), where Quicktext's button is today. Icon plus the label "Templates" ("Szablony" in Polish). `type: "button"` with `default_popup: "popup/popup.html"`.
+`compose_action` in the main composition toolbar (`default_area: "maintoolbar"`), where Quicktext's button is today. Icon plus the label "Quicktext Lite", the add-on's name, in every language. `type: "button"` with `default_popup: "popup/popup.html"`.
 
 ### 4.2 Shortcut that opens the panel
 

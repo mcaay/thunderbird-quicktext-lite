@@ -5,30 +5,14 @@ Texts used for the ATN listing and for the reviewers.
 ## Listing
 
 - **Name:** Quicktext Lite
-- **Summary:** Insert saved HTML templates into the message you are writing. Group them, pick them from a panel or the context menu, and insert the first ten with Cmd/Ctrl+1 to 0.
+- **Summary and description:** written by the author on ATN, in English and Polish.
 - **Category:** Message Composition
 - **License:** MIT
 - **Privacy policy:** none, the add-on collects no data.
 
-### Description
-
-Quicktext Lite keeps your HTML templates, such as signatures and standard replies, and inserts them into the message you are writing.
-
-• Press Cmd+Shift+S (Ctrl+Shift+S on Windows and Linux) or click Templates in the compose toolbar. Type to search, accents are ignored, and press Enter. Cmd/Ctrl+1 to 0 inserts one of the first ten templates at once.
-• Ctrl+Shift+1 to Ctrl+Shift+0 inserts templates 1 to 10 without opening the panel (on a Mac too: Ctrl, not Cmd).
-• Right-click in the message to insert any template from the context menu.
-• Group templates, reorder them by drag and drop, and edit their HTML with syntax highlighting and a preview.
-• Embed images from files, so they travel with every message.
-• Import your Quicktext templates from a JSON or XML export, and back up or restore your library.
-• One Cmd/Ctrl+Z removes an inserted template.
-
-Built only on the standard MailExtension APIs, without Experiments.
-
-Templates work only in HTML messages. Quicktext tags in double square brackets are not supported and are inserted as plain text.
-
-Privacy: Quicktext Lite collects no data and has no servers. Your templates stay in Thunderbird on your computer.
-
 ### Version notes
+
+1.0.26: The compose toolbar button now says Quicktext Lite instead of Templates.
 
 1.0.25: Ctrl+Shift+1 to Ctrl+Shift+0 inserts templates 1 to 10 without opening the panel (on a Mac too: Ctrl, not Cmd). New icon.
 
@@ -38,7 +22,7 @@ Privacy: Quicktext Lite collects no data and has no servers. Your templates stay
 
 How to test (Thunderbird 153 or later):
 1. Open the add-on's options page (Add-ons Manager, Quicktext Lite, Options) and create a template, for example `<p><b>Hello</b> world</p>`.
-2. Write a new HTML message. Press Cmd+Shift+S (Ctrl+Shift+S) or click the Templates toolbar button, type part of the name and press Enter, or press Cmd/Ctrl+1.
+2. Write a new HTML message. Press Cmd+Shift+S (Ctrl+Shift+S) or click the Quicktext Lite toolbar button, type part of the name and press Enter, or press Cmd/Ctrl+1.
 3. Right-click in the message body and choose Insert template.
 4. Press Ctrl+Shift+1 (on macOS too: Ctrl, not Cmd): the first template is inserted without the panel.
 

@@ -1,6 +1,6 @@
 {
   "name": "quicktext-lite",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "private": true,
   "description": "Thunderbird add-on that inserts saved HTML templates into the message you are writing.",
   "license": "MIT",
